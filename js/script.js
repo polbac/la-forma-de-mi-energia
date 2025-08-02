@@ -381,7 +381,7 @@ function showUserMenu(username) {
     document.getElementById('githubFormContainer').style.display = 'none';
     document.getElementById('userMenuContainer').style.display = 'block';
     document.getElementById('rootContainer').style.display = 'block';
-    document.getElementById('currentUser').textContent = username;
+    document.getElementById('currentUser').textContent = `@${username}`;
     
     // Obtener el hash del usuario (generado o guardado)
     const userHash = localStorage.getItem('userHash') || generateUserHash(username);
@@ -398,7 +398,7 @@ function showUserMenu(username) {
     infoDiv.innerHTML = `
         <div style="margin-bottom: 10px;"><strong>Hash:</strong> ${userHash}</div>
         <div style="margin-bottom: 15px;"><strong>Timestamp:</strong> <span id="currentTimestamp">${Date.now()}</span></div>
-        <button id="pauseBtn" style="background: #0366d6; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-family: inherit; font-size: 11px;">⏸️</button>
+        <button id="pauseBtn" style="background: yellow; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-family: inherit; font-size: 11px;">⏸️</button>
     `;
     
     document.getElementById('rootContainer').appendChild(infoDiv);

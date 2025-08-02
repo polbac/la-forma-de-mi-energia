@@ -55,7 +55,7 @@ input {
 
 #githubUsername:focus {
   outline: none;
-  border-color: #0366d6;
+  border-color: yellow;
 }
 
 /* Estilos para el contenedor de búsqueda */
@@ -211,7 +211,7 @@ button[type="submit"]:active {
 
 .user-menu-trigger:hover {
   background-color: #f8f9fa;
-  border-color: #0366d6;
+  border-color: black;
 }
 
 .user-menu-trigger span:first-child {

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>la forma de mi energía</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <pre id="taag_output_text" class="fig-ansi" contenteditable="true">
+ ▄▀▀▀▀▄      ▄▀▀█▄       ▄▀▀▀█▄    ▄▀▀▀▀▄   ▄▀▀▄▀▀▀▄  ▄▀▀▄ ▄▀▄  ▄▀▀█▄       ▄▀▀█▄▄   ▄▀▀█▄▄▄▄      ▄▀▀▄ ▄▀▄  ▄▀▀█▀▄        ▄▀▀█▄▄▄▄  ▄▀▀▄ ▀▄  ▄▀▀▄▀▀▀▄  ▄▀▀▀▀▄   ▄▀▀█▀▄    ▄▀▀█▄  
+█    █      ▐ ▄▀ ▀▄     █  ▄▀  ▀▄ █      █ █   █   █ █  █ ▀  █ ▐ ▄▀ ▀▄     █ ▄▀   █ ▐  ▄▀   ▐     █  █ ▀  █ █   █  █      ▐  ▄▀   ▐ █  █ █ █ █   █   █ █        █   █  █  ▐ ▄▀ ▀▄ 
+▐    █        █▄▄▄█     ▐ █▄▄▄▄   █      █ ▐  █▀▀█▀  ▐  █    █   █▄▄▄█     ▐ █    █   █▄▄▄▄▄      ▐  █    █ ▐   █  ▐        █▄▄▄▄▄  ▐  █  ▀█ ▐  █▀▀█▀  █    ▀▄▄ ▐   █  ▐    █▄▄▄█ 
+    █        ▄▀   █      █    ▐   ▀▄    ▄▀  ▄▀    █    █    █   ▄▀   █       █    █   █    ▌        █    █      █           █    ▌    █   █   ▄▀    █  █     █ █    █      ▄▀   █ 
+  ▄▀▄▄▄▄▄▄▀ █   ▄▀       █          ▀▀▀▀   █     █   ▄▀   ▄▀   █   ▄▀       ▄▀▄▄▄▄▀  ▄▀▄▄▄▄       ▄▀   ▄▀    ▄▀▀▀▀▀▄       ▄▀▄▄▄▄   ▄▀   █   █     █   ▐▀▄▄▄▄▀ ▐ ▄▀▀▀▀▀▄  █   ▄▀  
+  █         ▐   ▐       █                  ▐     ▐   █    █    ▐   ▐       █     ▐   █    ▐       █    █    █       █      █    ▐   █    ▐   ▐     ▐   ▐        █       █ ▐   ▐   
+  ▐                     ▐                            ▐    ▐                ▐         ▐            ▐    ▐    ▐       ▐      ▐        ▐                           ▐       ▐         
+          
+          </pre
+    >
+    <div class="github-form" id="githubFormContainer">
+      <form id="githubForm">
+        <div class="search-container">
+          <input
+            type="text"
+            id="githubUsername"
+            placeholder="buscar usuario github..."
+            required
+            autocomplete="off"
+          />
+          <div id="searchDropdown" class="search-dropdown"></div>
+        </div>
+        <button type="submit">La forma de mi energía</button>
+      </form>
+      <div id="message"></div>
+    </div>
+
+    <div class="user-menu" id="userMenuContainer" style="display: none">
+      <div class="user-menu-trigger" id="userMenuTrigger">
+        <span id="currentUser"></span>
+        <span class="dropdown-arrow">▼</span>
+      </div>
+      <div class="user-menu-dropdown" id="userMenuDropdown">
+        <div class="menu-item" id="logoutBtn">
+          <span>Cerrar sesión</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="root" id="rootContainer" style="display: none">
+      <div id="shapesContainer" class="shapes-container"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
